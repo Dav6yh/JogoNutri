@@ -373,7 +373,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ChikBoy_run_0: -6866942782406579094
+      ChikBoy_run_1: 4872662423150312607
+      ChikBoy_run_2: 5425214414602943651
+      ChikBoy_run_3: -6480021372096519803
+      ChikBoy_run_4: 3560359612170002445
+      ChikBoy_run_5: -4371324965576402629
+      ChikBoy_run_6: -8312818352361163439
+      ChikBoy_run_7: -829219289987470651
+      ChikBoy_run_8: 4470447199094781183
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
