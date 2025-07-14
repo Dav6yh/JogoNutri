@@ -198,7 +198,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ice VFX 2 Ending7_0: 8817231735654598180
+      Ice VFX 2 Ending7_1: -7978751516110493956
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
