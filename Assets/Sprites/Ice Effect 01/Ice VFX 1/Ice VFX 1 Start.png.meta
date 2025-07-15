@@ -148,10 +148,10 @@ TextureImporter:
       name: Ice VFX 1 Start_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 11
-        width: 15
-        height: 9
+        x: 0
+        y: 0
+        width: 144
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,55 +166,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Ice VFX 1 Start_1
-      rect:
-        serializedVersion: 2
-        x: 57
-        y: 10
-        width: 20
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 08a09326b2570c430800000000000000
-      internalID: 3801166914692647552
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ice VFX 1 Start_2
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 10
-        width: 21
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 12d95e1434ba602b0800000000000000
-      internalID: -5618615179741389535
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b91deff6eacade54d8f83b0f9b756133
     internalID: 0
     vertices: []
     indices: 
@@ -225,8 +181,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Ice VFX 1 Start_0: 4138621075764119247
-      Ice VFX 1 Start_1: 3801166914692647552
-      Ice VFX 1 Start_2: -5618615179741389535
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

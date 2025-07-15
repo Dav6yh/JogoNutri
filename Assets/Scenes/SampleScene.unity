@@ -250,11 +250,11 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.06, y: -0.18, z: -1.4859773}
-  m_LocalScale: {x: 0.14859773, y: 0.14859773, z: 0.14859773}
+  m_LocalPosition: {x: 143.61624, y: 220.15744, z: -3.7460003}
+  m_LocalScale: {x: 0.37460002, y: 0.37460002, z: 0.37460002}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1729534294}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &619394800
 GameObject:
@@ -364,12 +364,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 691747369}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 145.46, y: 220.67, z: -3.7974262}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.67138916, y: 0.023321876, z: -1.5063773}
+  m_LocalScale: {x: 0.39668375, y: 0.39668375, z: 0.39668375}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1729534294}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &826769400
 GameObject:
@@ -723,7 +723,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!95 &1729534292
 Animator:
   serializedVersion: 7
@@ -814,7 +814,7 @@ Transform:
   m_LocalScale: {x: 2.5209, y: 2.5209, z: 2.5209}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 519420032}
+  - {fileID: 691747370}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1729534295
@@ -836,9 +836,9 @@ MonoBehaviour:
   moveH: 0
   noPiso: 1
   pontosTotais: 0
-  tiroPreFab: {fileID: 0}
-  mira: {fileID: 0}
-  forcaTiro: 0
+  tiroPreFab: {fileID: 6028478177781994297, guid: aa721ac7ae79d1c4d82efd92296541a7, type: 3}
+  mira: {fileID: 691747369}
+  forcaTiro: 100
 --- !u!1 &1844946487
 GameObject:
   m_ObjectHideFlags: 0
@@ -977,9 +977,9 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 519420032}
   - {fileID: 619394802}
   - {fileID: 826769404}
   - {fileID: 1428091941}
   - {fileID: 1729534294}
   - {fileID: 1844946490}
-  - {fileID: 691747370}
