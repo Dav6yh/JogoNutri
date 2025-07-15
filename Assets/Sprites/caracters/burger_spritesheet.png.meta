@@ -573,7 +573,24 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      burger_spritesheet_0: -6609440649374973478
+      burger_spritesheet_1: -8597148607275127856
+      burger_spritesheet_10: -5346445025071744049
+      burger_spritesheet_11: -5307803099366273705
+      burger_spritesheet_12: 8447763421585590078
+      burger_spritesheet_13: -3222390449008806184
+      burger_spritesheet_14: 6365910946216461660
+      burger_spritesheet_15: 6755929883533007705
+      burger_spritesheet_16: 7199776253149995701
+      burger_spritesheet_2: 7195972972059270497
+      burger_spritesheet_3: 3213263927665980656
+      burger_spritesheet_4: 399455777676110974
+      burger_spritesheet_5: 4184913225726809613
+      burger_spritesheet_6: 4710180445000989648
+      burger_spritesheet_7: -2554567483190972589
+      burger_spritesheet_8: -1695242847919379485
+      burger_spritesheet_9: 6193884108842768996
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

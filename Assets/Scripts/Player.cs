@@ -132,7 +132,7 @@ public class Player : MonoBehaviour
 
     private void Atacar()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButtonDown(0))
         {
             StartCoroutine(Atirar());
             animator.SetTrigger("Atirar");
