@@ -340,6 +340,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &691747369
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 691747370}
+  m_Layer: 0
+  m_Name: mira
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &691747370
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691747369}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 145.46, y: 220.67, z: -3.7974262}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &826769400
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,11 +832,13 @@ MonoBehaviour:
   vida: 100
   dano: 10
   velocidadeAndar: 5
-  velocidadeRun: 10
   forcaPulo: 10
   moveH: 0
   noPiso: 1
   pontosTotais: 0
+  tiroPreFab: {fileID: 0}
+  mira: {fileID: 0}
+  forcaTiro: 0
 --- !u!1 &1844946487
 GameObject:
   m_ObjectHideFlags: 0
@@ -819,7 +852,7 @@ GameObject:
   - component: {fileID: 1844946488}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -949,3 +982,4 @@ SceneRoots:
   - {fileID: 1428091941}
   - {fileID: 1729534294}
   - {fileID: 1844946490}
+  - {fileID: 691747370}
