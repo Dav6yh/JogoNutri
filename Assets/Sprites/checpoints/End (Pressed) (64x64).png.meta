@@ -163,20 +163,20 @@ TextureImporter:
       name: End (Pressed) (64x64)_0
       rect:
         serializedVersion: 2
-        x: 8
+        x: 9
         y: 0
-        width: 48
-        height: 39
+        width: 46
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 19c8d2571d0edf6a0800000000000000
-      internalID: -6413723104087012207
+      spriteID: ea43a9ea3714b464fbd2e8c713e23e49
+      internalID: -1795586569
       vertices: []
       indices: 
       edges: []
@@ -185,20 +185,20 @@ TextureImporter:
       name: End (Pressed) (64x64)_1
       rect:
         serializedVersion: 2
-        x: 72
+        x: 73
         y: 0
-        width: 48
-        height: 39
+        width: 46
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d5e061dd90c488630800000000000000
-      internalID: 3929474280128384605
+      spriteID: 9fd0783b7325572468bbf5becf8bf3ab
+      internalID: 1456365184
       vertices: []
       indices: 
       edges: []
@@ -207,20 +207,20 @@ TextureImporter:
       name: End (Pressed) (64x64)_2
       rect:
         serializedVersion: 2
-        x: 136
+        x: 137
         y: 0
-        width: 48
-        height: 39
+        width: 46
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 41cd4d0ff7d390610800000000000000
-      internalID: 1587867963335433236
+      spriteID: e4ab8283436ccc64d8e829121ecac141
+      internalID: 1554552842
       vertices: []
       indices: 
       edges: []
@@ -229,20 +229,20 @@ TextureImporter:
       name: End (Pressed) (64x64)_3
       rect:
         serializedVersion: 2
-        x: 200
+        x: 201
         y: 0
-        width: 48
-        height: 42
+        width: 46
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 80eb865ebacd0e3b0800000000000000
-      internalID: -5485141715290898936
+      spriteID: 769ededa76123314b81d8f4ec0bc7bcd
+      internalID: -382843145
       vertices: []
       indices: 
       edges: []
@@ -251,20 +251,20 @@ TextureImporter:
       name: End (Pressed) (64x64)_4
       rect:
         serializedVersion: 2
-        x: 264
+        x: 265
         y: 0
-        width: 48
-        height: 45
+        width: 46
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 660bf9483a86c72e0800000000000000
-      internalID: -2126709872511700890
+      spriteID: f81771520db847b4c83510ccfefefe01
+      internalID: -1810991664
       vertices: []
       indices: 
       edges: []
@@ -273,20 +273,20 @@ TextureImporter:
       name: End (Pressed) (64x64)_5
       rect:
         serializedVersion: 2
-        x: 328
+        x: 329
         y: 0
-        width: 48
-        height: 45
+        width: 46
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ef30c5d57cde163f0800000000000000
-      internalID: -909184209231543298
+      spriteID: 813f6d7704423604ca2495ad9f529170
+      internalID: 1776509661
       vertices: []
       indices: 
       edges: []
@@ -295,20 +295,20 @@ TextureImporter:
       name: End (Pressed) (64x64)_6
       rect:
         serializedVersion: 2
-        x: 392
+        x: 393
         y: 0
-        width: 48
-        height: 46
+        width: 46
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 488b1fd302c343610800000000000000
-      internalID: 1599969876799240324
+      spriteID: 1c96b9ceab57652428d124ffff1ed5e2
+      internalID: 1152171146
       vertices: []
       indices: 
       edges: []
@@ -317,20 +317,20 @@ TextureImporter:
       name: End (Pressed) (64x64)_7
       rect:
         serializedVersion: 2
-        x: 456
+        x: 457
         y: 0
-        width: 48
-        height: 46
+        width: 46
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 387a54d507af38010800000000000000
-      internalID: 1190070087064070019
+      spriteID: e7f13366fb8eaab4584ce7f647b26543
+      internalID: 1959666036
       vertices: []
       indices: 
       edges: []
@@ -339,7 +339,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 32157e5093045f247b4d0666cd630010
     internalID: 0
     vertices: []
     indices: 
@@ -348,7 +348,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      End (Pressed) (64x64)_0: -1795586569
+      End (Pressed) (64x64)_1: 1456365184
+      End (Pressed) (64x64)_2: 1554552842
+      End (Pressed) (64x64)_3: -382843145
+      End (Pressed) (64x64)_4: -1810991664
+      End (Pressed) (64x64)_5: 1776509661
+      End (Pressed) (64x64)_6: 1152171146
+      End (Pressed) (64x64)_7: 1959666036
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
