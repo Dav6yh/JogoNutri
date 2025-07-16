@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &3679735178594092113
+--- !u!1001 &25543780007797232
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -14,23 +14,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: db604510833a6354e9dad27966256fd1, type: 3}
       propertyPath: m_LocalScale.x
-      value: 5.540332
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: db604510833a6354e9dad27966256fd1, type: 3}
       propertyPath: m_LocalScale.y
-      value: 5.540332
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: db604510833a6354e9dad27966256fd1, type: 3}
       propertyPath: m_LocalScale.z
-      value: 5.540332
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: db604510833a6354e9dad27966256fd1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 148.6092
+      value: 0.7457
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: db604510833a6354e9dad27966256fd1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 215.7524
+      value: -3.3069
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: db604510833a6354e9dad27966256fd1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -70,27 +70,27 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: db604510833a6354e9dad27966256fd1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8713234022240682635}
+      addedObject: {fileID: 3459504278240876273}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: db604510833a6354e9dad27966256fd1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8992652121407577479}
+      addedObject: {fileID: -8426407422958450166}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: db604510833a6354e9dad27966256fd1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3876999649508357277}
+      addedObject: {fileID: 2962715324083757166}
   m_SourcePrefab: {fileID: -8435245712485981826, guid: db604510833a6354e9dad27966256fd1, type: 3}
---- !u!1 &6028478177781994297 stripped
+--- !u!1 &6981354297957693080 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2253911629886400664, guid: db604510833a6354e9dad27966256fd1, type: 3}
-  m_PrefabInstance: {fileID: 3679735178594092113}
+  m_PrefabInstance: {fileID: 25543780007797232}
   m_PrefabAsset: {fileID: 0}
---- !u!50 &8713234022240682635
+--- !u!50 &3459504278240876273
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6028478177781994297}
+  m_GameObject: {fileID: 6981354297957693080}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -110,13 +110,13 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &8992652121407577479
+--- !u!61 &-8426407422958450166
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6028478177781994297}
+  m_GameObject: {fileID: 6981354297957693080}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -156,17 +156,17 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.34, y: 0.120000005}
   m_EdgeRadius: 0
---- !u!114 &3876999649508357277
+--- !u!114 &2962715324083757166
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6028478177781994297}
+  m_GameObject: {fileID: 6981354297957693080}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ce0d0dd843696ce4b80865c3ec88ed9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dano: 10
-  destroyTiroPreFab: {fileID: 6028478177781994297}
+  speed: 10
+  hit: 0
