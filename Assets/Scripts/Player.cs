@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private int vida = 100;
+    [SerializeField] private int vida = 3;
     [SerializeField] private float dano;
     [SerializeField] private float velocidadeAndar;
     // [SerializeField] private float velocidadeRun;
@@ -15,14 +15,16 @@ public class Player : MonoBehaviour
     [SerializeField] private int pontosTotais = 0;
     [SerializeField] private GameObject tiroPreFab;
     [SerializeField] private GameObject mira;
-    [SerializeField] private int forcaTiro;
+    [SerializeField] private float forcaTiro;
     private float velocidadeAtual;
     private bool estaVivo = true;
     private TextMeshProUGUI textoPontos;
     private Rigidbody2D rb;
     private Animator animator;
     private SpriteRenderer sprite;
-
+    private bool direcao;
+    private bool shot;
+    private bool atirandoDir;
 
     void Start()
     {
@@ -37,7 +39,7 @@ public class Player : MonoBehaviour
     {
         Andar();
         Pular();
-        Atacar();
+        ArrowShot();
         //Correr();
     }
 
@@ -50,10 +52,12 @@ public class Player : MonoBehaviour
         if (Input.GetKey(KeyCode.D))
         {
             sprite.flipX = false;
+            atirandoDir = true;
         }
         else if (Input.GetKey(KeyCode.A))
         {
             sprite.flipX = true;
+            atirandoDir = false;
         }
         else
         {
@@ -126,28 +130,40 @@ public class Player : MonoBehaviour
         {
             noPiso = true;
             animator.SetBool("EstaChao", true);
-            animator.SetFloat("ValorPulo", 0);
+            //animator.SetFloat("ValorPulo", 0);
         }
     }
-
-    private void Atacar()
+    private void ArrowShot()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0)) {
+
+        if (!shot)
         {
-            StartCoroutine(Atirar());
-            animator.SetTrigger("Atirar");
+            //playerSound.ArrowSound();
+
+            if (atirandoDir)
+            {
+                Instantiate(tiroPreFab, mira.transform.position, Quaternion.identity).GetComponent<Arrow>().ArrowRight();
+            }
+            else
+            {
+                Instantiate(tiroPreFab, mira.transform.position, Quaternion.Euler(0, 180f, 0)).GetComponent<Arrow>().ArrowLeft();
+            }
+
+            StartCoroutine("DestroyArrow");
+        }
         }
     }
 
-    IEnumerator Atirar()
-    {
-        yield return new WaitForSeconds(0.5f);
-        GameObject tiro =  Instantiate(tiroPreFab, mira.transform.position, mira.transform.rotation);
-        tiro.transform.rotation *= Quaternion.Euler(0, 0, 0);
-        Rigidbody rbTiro = tiro.GetComponent<Rigidbody>();
-        rbTiro.AddForce(mira.transform.forward * forcaTiro, ForceMode.Impulse);
 
+    IEnumerator DestroyArrow()
+    {
+        shot = true;
+        yield return new WaitForSeconds(1.0f);
+        shot = false;
     }
+
+
 
     private void Especial()
     {
