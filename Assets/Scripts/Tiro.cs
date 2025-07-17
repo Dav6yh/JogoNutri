@@ -7,9 +7,15 @@ public class Arrow : MonoBehaviour
     public float speed;
     public int hit;
     private bool direcaoDir;
+    private Animator animator;
 
 
     // Update is called once per frame
+
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
     void FixedUpdate()
     {
         if (direcaoDir)
@@ -31,7 +37,7 @@ public class Arrow : MonoBehaviour
         if (!other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Chao"))
            // || other.gameObject.CompareTag("TriggerLeft") || other.gameObject.CompareTag("TriggerRight"))
         {
-            Destroy(this.gameObject);
+            animator.SetTrigger("hit");
         }
     }
 
