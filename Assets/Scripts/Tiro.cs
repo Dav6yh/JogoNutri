@@ -9,6 +9,7 @@ public class Arrow : MonoBehaviour
     private bool direcaoDir;
     private bool move = true;
     private Animator animator;
+    private AudioSource audio;
 
 
 
@@ -17,24 +18,19 @@ public class Arrow : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        audio = GetComponent<AudioSource>();
     }
     void FixedUpdate()
     {
-        if (!move)
-        {
-               
-        }
 
-        if (direcaoDir)
+        if (direcaoDir && move)
         {
             transform.position += new Vector3(1 * speed * Time.deltaTime, 0, 0);
-            move = true;
 
         }
-        else if (!direcaoDir)
+        else if (!direcaoDir & move)
         {
             transform.position += new Vector3(-1 * speed * Time.deltaTime, 0, 0);
-            move = true;
         }
 
         //transform.position += new Vector3(1 * speed * Time.deltaTime, 0, 0);
@@ -44,7 +40,7 @@ public class Arrow : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (!other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Chao"))
+        if (!other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Chao") || other.gameObject.CompareTag("Inimigo"))
            // || other.gameObject.CompareTag("TriggerLeft") || other.gameObject.CompareTag("TriggerRight"))
         {
             StartCoroutine("DestroyShot");
@@ -55,7 +51,7 @@ public class Arrow : MonoBehaviour
     {
         move = false;
         animator.SetTrigger("hit");
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(0.5f);
         Destroy(this.gameObject);
     }
     IEnumerator DestroyAfter()

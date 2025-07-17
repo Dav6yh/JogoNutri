@@ -26,12 +26,14 @@ public class Player : MonoBehaviour
     private bool direcao;
     private bool shot;
     private bool atirandoDir;
+    private AudioSource audioSource;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
+        audioSource = GetComponent<AudioSource>();
         //textoPontos = GameObject.Find("Point").GetComponent<TextMeshProUGUI>();
         //textoPontos.text = "0";
     }
@@ -161,7 +163,7 @@ public class Player : MonoBehaviour
             //animator.SetFloat("ValorPulo", 0);
         }
 
-        if (collision.gameObject.CompareTag("Fatal"))
+        if (collision.gameObject.CompareTag("Fatal") || collision.gameObject.CompareTag("Inimigo"))
         {
             LevarDano();
         }

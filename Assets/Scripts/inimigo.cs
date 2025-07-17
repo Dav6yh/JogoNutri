@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class inimigo : MonoBehaviour
 {
-    private int dir = 0;
+    private int dir = 1;
     private float speed;
    
     void Start()
@@ -23,6 +23,10 @@ public class inimigo : MonoBehaviour
         if(dir == 1)
         {
             dir = -1;
+        }
+        else
+        {
+            dir = 1;
         }
     }
     private void OnTriggerEnter(Collider other)
