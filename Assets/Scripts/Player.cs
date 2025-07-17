@@ -17,6 +17,8 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject tiroPreFab;
     [SerializeField] private GameObject mira;
     [SerializeField] private float forcaTiro;
+    [SerializeField] private AudioClip tiro;
+    [SerializeField] private AudioClip jump;
     private float velocidadeAtual;
     private bool estaVivo = true;
     private TextMeshProUGUI textoPontos;
@@ -26,14 +28,15 @@ public class Player : MonoBehaviour
     private bool direcao;
     private bool shot;
     private bool atirandoDir;
-    private AudioSource audioSource;
+    private Audio audioSource;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
-        audioSource = GetComponent<AudioSource>();
+        audioSource = GameObject.Find("AudioSource").GetComponent<Audio>();
+
         //textoPontos = GameObject.Find("Point").GetComponent<TextMeshProUGUI>();
         //textoPontos.text = "0";
     }
@@ -107,6 +110,7 @@ public class Player : MonoBehaviour
         {
             rb.AddForce(Vector2.up * forcaPulo, ForceMode2D.Impulse);
             noPiso = false;
+            audioSource.TocarSom(jump);
             animator.SetBool("EstaChao", false);
             animator.SetTrigger("Pular");
         }
@@ -175,8 +179,7 @@ public class Player : MonoBehaviour
 
             if (!shot)
             {
-                //playerSound.ArrowSound();
-
+                audioSource.TocarSom(tiro);
                 if (atirandoDir)
                 {
                     Instantiate(tiroPreFab, mira.transform.position, Quaternion.identity).GetComponent<Arrow>().ArrowRight();
