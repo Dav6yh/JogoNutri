@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 3072858575331624092}
   - component: {fileID: 8390916905198760499}
   - component: {fileID: 8069371527489962145}
-  - component: {fileID: 4652689000335325557}
   - component: {fileID: 2701350132203284068}
+  - component: {fileID: 2985568736172301071}
   m_Layer: 0
   m_Name: Dude_Monster_0
   m_TagString: Player
@@ -141,8 +141,30 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &4652689000335325557
-BoxCollider2D:
+--- !u!114 &2701350132203284068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3174566099737999208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fbbe04e314c7d347a12abd4cf0bc18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 100
+  dano: 10
+  velocidadeAndar: 5
+  forcaPulo: 10
+  moveH: 0
+  noPiso: 1
+  pontosTotais: 0
+  tiroPreFab: {fileID: 4923267804027144551, guid: daef351b0fc0137429e122208626e575, type: 3}
+  mira: {fileID: 5651441097013099029}
+  forcaTiro: 100
+--- !u!70 &2985568736172301071
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -175,40 +197,9 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.018624663, y: -0.08753353}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.5624851, y: 0.8308592}
-  m_EdgeRadius: 0
---- !u!114 &2701350132203284068
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3174566099737999208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fbbe04e314c7d347a12abd4cf0bc18f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vida: 100
-  dano: 10
-  velocidadeAndar: 5
-  forcaPulo: 10
-  moveH: 0
-  noPiso: 1
-  pontosTotais: 0
-  tiroPreFab: {fileID: 4923267804027144551, guid: daef351b0fc0137429e122208626e575, type: 3}
-  mira: {fileID: 5651441097013099029}
-  forcaTiro: 100
+  m_Offset: {x: -0.012317217, y: -0.102326766}
+  m_Size: {x: 0.45075923, y: 0.79534686}
+  m_Direction: 0
 --- !u!1 &5651441097013099029
 GameObject:
   m_ObjectHideFlags: 0
