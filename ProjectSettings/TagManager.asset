@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Chao
   - TriggerRight
+  - Fatal
   layers:
   - Default
   - TransparentFX
