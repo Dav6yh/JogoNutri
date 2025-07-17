@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -25,12 +26,14 @@ public class Player : MonoBehaviour
     private bool direcao;
     private bool shot;
     private bool atirandoDir;
+    private AudioSource audioSource;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
+        audioSource = GetComponent<AudioSource>();
         //textoPontos = GameObject.Find("Point").GetComponent<TextMeshProUGUI>();
         //textoPontos.text = "0";
     }
@@ -124,6 +127,33 @@ public class Player : MonoBehaviour
         //}
     }
 
+    private void LevarDano()
+    {
+        if (vida > 0)
+        {
+            --vida;
+            animator.SetTrigger("Hurt");
+        }
+        else if (vida <= 0)
+        {
+            Morrer();
+        }
+    }
+
+    private void Morrer()
+    {
+        
+       StartCoroutine("Morrendo");
+        
+    }
+
+    IEnumerator Morrendo()
+    {
+        animator.SetBool("EstaVivo", false);
+        animator.SetTrigger("Death");
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene("MenuPrincipal");
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Chao"))
@@ -132,26 +162,32 @@ public class Player : MonoBehaviour
             animator.SetBool("EstaChao", true);
             //animator.SetFloat("ValorPulo", 0);
         }
+
+        if (collision.gameObject.CompareTag("Fatal") || collision.gameObject.CompareTag("Inimigo"))
+        {
+            LevarDano();
+        }
     }
     private void ArrowShot()
     {
-        if (Input.GetMouseButtonDown(0)) {
-
-        if (!shot)
+        if (Input.GetMouseButtonDown(0))
         {
-            //playerSound.ArrowSound();
 
-            if (atirandoDir)
+            if (!shot)
             {
-                Instantiate(tiroPreFab, mira.transform.position, Quaternion.identity).GetComponent<Arrow>().ArrowRight();
-            }
-            else
-            {
-                Instantiate(tiroPreFab, mira.transform.position, Quaternion.Euler(0, 180f, 0)).GetComponent<Arrow>().ArrowLeft();
-            }
+                //playerSound.ArrowSound();
 
-            StartCoroutine("DestroyArrow");
-        }
+                if (atirandoDir)
+                {
+                    Instantiate(tiroPreFab, mira.transform.position, Quaternion.identity).GetComponent<Arrow>().ArrowRight();
+                }
+                else
+                {
+                    Instantiate(tiroPreFab, mira.transform.position, Quaternion.Euler(0, 180f, 0)).GetComponent<Arrow>().ArrowLeft();
+                }
+
+                StartCoroutine("DestroyArrow");
+            }
         }
     }
 

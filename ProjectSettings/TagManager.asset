@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Chao
   - TriggerRight
+  - Fatal
+  - Direita
+  - Esquerda
+  - Tiro
+  - Inimigo
   layers:
   - Default
   - TransparentFX
