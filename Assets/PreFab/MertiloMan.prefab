@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4652689000335325557}
   - component: {fileID: 2701350132203284068}
   m_Layer: 0
-  m_Name: Dude_Monster_0
+  m_Name: MertiloMan
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -209,6 +209,8 @@ MonoBehaviour:
   tiroPreFab: {fileID: 4923267804027144551, guid: daef351b0fc0137429e122208626e575, type: 3}
   mira: {fileID: 5651441097013099029}
   forcaTiro: 100
+  tiro: {fileID: 8300000, guid: d955dd0883e8c934e93eec63da2fd15f, type: 3}
+  jump: {fileID: 8300000, guid: be9ad346f0d08614c98785ee703f5cd5, type: 3}
 --- !u!1 &5651441097013099029
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class Arrow : MonoBehaviour
 {
@@ -9,7 +10,8 @@ public class Arrow : MonoBehaviour
     private bool direcaoDir;
     private bool move = true;
     private Animator animator;
-    private AudioSource audio;
+    private Audio audio;
+    [SerializeField] private AudioClip explosion;
 
 
 
@@ -18,7 +20,7 @@ public class Arrow : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        audio = GetComponent<AudioSource>();
+        audio = GameObject.Find("AudioSource").GetComponent<Audio>();
     }
     void FixedUpdate()
     {
@@ -51,6 +53,7 @@ public class Arrow : MonoBehaviour
     {
         move = false;
         animator.SetTrigger("hit");
+        audio.TocarSom(explosion);
         yield return new WaitForSeconds(0.5f);
         Destroy(this.gameObject);
     }

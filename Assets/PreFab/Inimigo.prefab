@@ -127,6 +127,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dir: 1
   speed: 5
+  idle: {fileID: 0}
+  morrer: {fileID: 8300000, guid: b4929daa4df15924d8b4be2db629e9d5, type: 3}
 --- !u!61 &914013838052497678
 BoxCollider2D:
   m_ObjectHideFlags: 0

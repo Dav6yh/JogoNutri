@@ -9,22 +9,28 @@ public class inimigo : MonoBehaviour
     [SerializeField] private float speed;
     private SpriteRenderer sprite;
     private Animator animator;
-    private AudioSource audioSource;
-   
+    private Audio audioSource;
+    [SerializeField] private AudioClip idle;
+    [SerializeField] private AudioClip morrer;
+
     void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        audioSource = GameObject.Find("AudioSource").GetComponent<Audio>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
         Andar();
+        audioSource.TocarSom(idle);
     }
 
     private void Andar()
     {
+        
         transform.position += new Vector3(dir * speed * Time.deltaTime,0,0);
     }
 
@@ -66,6 +72,7 @@ public class inimigo : MonoBehaviour
     IEnumerator Morrer()
     {
         animator.SetTrigger("Morrer");
+        audioSource.TocarSom(morrer);
         yield return new WaitForSeconds(0.5f);
         Destroy(this.gameObject);
     }
