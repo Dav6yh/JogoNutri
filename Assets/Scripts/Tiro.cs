@@ -7,7 +7,9 @@ public class Arrow : MonoBehaviour
     public float speed;
     public int hit;
     private bool direcaoDir;
+    private bool move = true;
     private Animator animator;
+
 
 
     // Update is called once per frame
@@ -18,13 +20,21 @@ public class Arrow : MonoBehaviour
     }
     void FixedUpdate()
     {
+        if (!move)
+        {
+               
+        }
+
         if (direcaoDir)
         {
             transform.position += new Vector3(1 * speed * Time.deltaTime, 0, 0);
+            move = true;
+
         }
         else if (!direcaoDir)
         {
             transform.position += new Vector3(-1 * speed * Time.deltaTime, 0, 0);
+            move = true;
         }
 
         //transform.position += new Vector3(1 * speed * Time.deltaTime, 0, 0);
@@ -37,10 +47,17 @@ public class Arrow : MonoBehaviour
         if (!other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Chao"))
            // || other.gameObject.CompareTag("TriggerLeft") || other.gameObject.CompareTag("TriggerRight"))
         {
-            animator.SetTrigger("hit");
+            StartCoroutine("DestroyShot");
         }
     }
 
+    IEnumerator DestroyShot()
+    {
+        move = false;
+        animator.SetTrigger("hit");
+        yield return new WaitForSeconds(2.0f);
+        Destroy(this.gameObject);
+    }
     IEnumerator DestroyAfter()
     {
         yield return new WaitForSeconds(2.0f);
@@ -61,5 +78,4 @@ public class Arrow : MonoBehaviour
     {
         return hit;
     }
-
 }
