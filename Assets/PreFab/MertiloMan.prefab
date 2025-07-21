@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2701350132203284068}
   - component: {fileID: 2985568736172301071}
   m_Layer: 0
-  m_Name: Dude_Monster_0
+  m_Name: MertiloMan
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35,6 +35,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9065732480172193587}
+  - {fileID: 6240652733508726590}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3072858575331624092
@@ -163,6 +164,8 @@ MonoBehaviour:
   tiroPreFab: {fileID: 4923267804027144551, guid: daef351b0fc0137429e122208626e575, type: 3}
   mira: {fileID: 5651441097013099029}
   forcaTiro: 100
+  tiro: {fileID: 8300000, guid: d955dd0883e8c934e93eec63da2fd15f, type: 3}
+  jump: {fileID: 8300000, guid: be9ad346f0d08614c98785ee703f5cd5, type: 3}
 --- !u!70 &2985568736172301071
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -200,6 +203,81 @@ CapsuleCollider2D:
   m_Offset: {x: -0.012317217, y: -0.102326766}
   m_Size: {x: 0.45075923, y: 0.79534686}
   m_Direction: 0
+--- !u!1 &3661271215373692705
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6240652733508726590}
+  - component: {fileID: 741885345752108421}
+  m_Layer: 0
+  m_Name: CinemachineCamera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6240652733508726590
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3661271215373692705}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.061818406, y: 0.030210093, z: -2.741213}
+  m_LocalScale: {x: 0.39668375, y: 0.39668375, z: 0.39668375}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 423415680640767797}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &741885345752108421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3661271215373692705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9dfa5b682dcd46bda6128250e975f58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Priority:
+    Enabled: 1
+    m_Value: 0
+  OutputChannel: 1
+  StandbyUpdate: 2
+  m_StreamingVersion: 20241001
+  m_LegacyPriority: 0
+  Target:
+    TrackingTarget: {fileID: 0}
+    LookAtTarget: {fileID: 0}
+    CustomLookAtTarget: 0
+  Lens:
+    FieldOfView: 34
+    OrthographicSize: 3.4469416
+    NearClipPlane: 0.3
+    FarClipPlane: 1000
+    Dutch: 0
+    ModeOverride: 0
+    PhysicalProperties:
+      GateFit: 2
+      SensorSize: {x: 21.946, y: 16.002}
+      LensShift: {x: 0, y: 0}
+      FocusDistance: 10
+      Iso: 200
+      ShutterSpeed: 0.005
+      Aperture: 16
+      BladeCount: 5
+      Curvature: {x: 2, y: 11}
+      BarrelClipping: 0.25
+      Anamorphism: 0
+  BlendHint: 0
 --- !u!1 &5651441097013099029
 GameObject:
   m_ObjectHideFlags: 0
