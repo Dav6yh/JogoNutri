@@ -179,7 +179,7 @@ public class Player : MonoBehaviour
 
             if (!shot)
             {
-                audioSource.TocarSom(tiro);
+                //audioSource.TocarSom(tiro);
                 if (atirandoDir)
                 {
                     Instantiate(tiroPreFab, mira.transform.position, Quaternion.identity).GetComponent<Arrow>().ArrowRight();

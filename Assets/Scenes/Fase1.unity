@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 125115227}
   m_Layer: 0
   m_Name: FOOD_92 (3)
-  m_TagString: Untagged
+  m_TagString: Fatal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -242,7 +242,7 @@ GameObject:
   - component: {fileID: 131620292}
   m_Layer: 0
   m_Name: FOOD_92 (1)
-  m_TagString: Untagged
+  m_TagString: Fatal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -481,7 +481,7 @@ GameObject:
   - component: {fileID: 354413041}
   m_Layer: 0
   m_Name: FOOD_521
-  m_TagString: Untagged
+  m_TagString: Fatal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -591,7 +591,7 @@ GameObject:
   - component: {fileID: 408093304}
   m_Layer: 0
   m_Name: FOOD_521 (3)
-  m_TagString: Untagged
+  m_TagString: Fatal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21983,7 +21983,7 @@ GameObject:
   - component: {fileID: 473345212}
   m_Layer: 0
   m_Name: FOOD_523 (1)
-  m_TagString: Untagged
+  m_TagString: Fatal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22093,7 +22093,7 @@ GameObject:
   - component: {fileID: 485905897}
   m_Layer: 0
   m_Name: FOOD_523 (2)
-  m_TagString: Untagged
+  m_TagString: Fatal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22203,7 +22203,7 @@ GameObject:
   - component: {fileID: 490273726}
   m_Layer: 0
   m_Name: FOOD_493 (4)
-  m_TagString: Untagged
+  m_TagString: Fatal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22416,7 +22416,7 @@ GameObject:
   - component: {fileID: 732257254}
   m_Layer: 0
   m_Name: FOOD_493 (2)
-  m_TagString: Untagged
+  m_TagString: Fatal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22526,7 +22526,7 @@ GameObject:
   - component: {fileID: 744842373}
   m_Layer: 0
   m_Name: FOOD_523
-  m_TagString: Untagged
+  m_TagString: Fatal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22807,7 +22807,7 @@ GameObject:
   - component: {fileID: 842570092}
   m_Layer: 0
   m_Name: FOOD_493 (3)
-  m_TagString: Untagged
+  m_TagString: Fatal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23010,7 +23010,7 @@ GameObject:
   - component: {fileID: 960594562}
   m_Layer: 0
   m_Name: FOOD_522 (2)
-  m_TagString: Untagged
+  m_TagString: Fatal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23120,7 +23120,7 @@ GameObject:
   - component: {fileID: 1003770872}
   m_Layer: 0
   m_Name: FOOD_92
-  m_TagString: Untagged
+  m_TagString: Fatal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23230,7 +23230,7 @@ GameObject:
   - component: {fileID: 1122826196}
   m_Layer: 0
   m_Name: FOOD_521 (1)
-  m_TagString: Untagged
+  m_TagString: Fatal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23340,7 +23340,7 @@ GameObject:
   - component: {fileID: 1130192030}
   m_Layer: 0
   m_Name: FOOD_522
-  m_TagString: Untagged
+  m_TagString: Fatal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23450,7 +23450,7 @@ GameObject:
   - component: {fileID: 1134032409}
   m_Layer: 0
   m_Name: FOOD_521 (2)
-  m_TagString: Untagged
+  m_TagString: Fatal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23560,7 +23560,7 @@ GameObject:
   - component: {fileID: 1167754376}
   m_Layer: 0
   m_Name: FOOD_522 (1)
-  m_TagString: Untagged
+  m_TagString: Fatal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23745,7 +23745,7 @@ GameObject:
   - component: {fileID: 1306460483}
   m_Layer: 0
   m_Name: FOOD_92 (4)
-  m_TagString: Untagged
+  m_TagString: Fatal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23854,6 +23854,7 @@ GameObject:
   - component: {fileID: 1345154013}
   - component: {fileID: 1345154012}
   - component: {fileID: 1345154015}
+  - component: {fileID: 1345154016}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -23902,9 +23903,9 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 34
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 3.4469416
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -23929,7 +23930,7 @@ Transform:
   m_GameObject: {fileID: 1345154011}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 220.32243, y: -19.52717, z: -10}
+  m_LocalPosition: {x: -66.72559, y: -5.3636355, z: -3.2996798}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23979,6 +23980,38 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &1345154016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345154011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowDebugText: 0
+  ShowCameraFrustum: 1
+  IgnoreTimeScale: 0
+  WorldUpOverride: {fileID: 0}
+  ChannelMask: -1
+  UpdateMethod: 2
+  BlendUpdateMethod: 1
+  LensModeOverride:
+    Enabled: 0
+    DefaultMode: 2
+  DefaultBlend:
+    Style: 1
+    Time: 2
+    CustomCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  CustomBlends: {fileID: 0}
 --- !u!1 &1349293885
 GameObject:
   m_ObjectHideFlags: 0
@@ -24071,7 +24104,7 @@ GameObject:
   - component: {fileID: 1355083998}
   m_Layer: 0
   m_Name: FOOD_493
-  m_TagString: Untagged
+  m_TagString: Fatal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24711,7 +24744,7 @@ GameObject:
   - component: {fileID: 1663000904}
   m_Layer: 0
   m_Name: FOOD_518
-  m_TagString: Untagged
+  m_TagString: Fatal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24883,6 +24916,75 @@ RectTransform:
   m_AnchoredPosition: {x: -29.53418, y: -14.915623}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &1749028434
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 423415680640767797, guid: e7c5a14194cfcc64592d72ca745dfec3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2037297
+      objectReference: {fileID: 0}
+    - target: {fileID: 423415680640767797, guid: e7c5a14194cfcc64592d72ca745dfec3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2037297
+      objectReference: {fileID: 0}
+    - target: {fileID: 423415680640767797, guid: e7c5a14194cfcc64592d72ca745dfec3, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2037297
+      objectReference: {fileID: 0}
+    - target: {fileID: 423415680640767797, guid: e7c5a14194cfcc64592d72ca745dfec3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -66.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 423415680640767797, guid: e7c5a14194cfcc64592d72ca745dfec3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 423415680640767797, guid: e7c5a14194cfcc64592d72ca745dfec3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 423415680640767797, guid: e7c5a14194cfcc64592d72ca745dfec3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 423415680640767797, guid: e7c5a14194cfcc64592d72ca745dfec3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 423415680640767797, guid: e7c5a14194cfcc64592d72ca745dfec3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 423415680640767797, guid: e7c5a14194cfcc64592d72ca745dfec3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 423415680640767797, guid: e7c5a14194cfcc64592d72ca745dfec3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 423415680640767797, guid: e7c5a14194cfcc64592d72ca745dfec3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 423415680640767797, guid: e7c5a14194cfcc64592d72ca745dfec3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3174566099737999208, guid: e7c5a14194cfcc64592d72ca745dfec3, type: 3}
+      propertyPath: m_Name
+      value: MertiloMan
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7c5a14194cfcc64592d72ca745dfec3, type: 3}
 --- !u!1 &1774397091
 GameObject:
   m_ObjectHideFlags: 0
@@ -24896,7 +24998,7 @@ GameObject:
   - component: {fileID: 1774397092}
   m_Layer: 0
   m_Name: FOOD_522 (3)
-  m_TagString: Untagged
+  m_TagString: Fatal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25006,7 +25108,7 @@ GameObject:
   - component: {fileID: 1851141400}
   m_Layer: 0
   m_Name: FOOD_493 (1)
-  m_TagString: Untagged
+  m_TagString: Fatal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25185,7 +25287,7 @@ GameObject:
   - component: {fileID: 1932042344}
   m_Layer: 0
   m_Name: FOOD_92 (2)
-  m_TagString: Untagged
+  m_TagString: Fatal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25389,3 +25491,4 @@ SceneRoots:
   - {fileID: 947013787}
   - {fileID: 1435416363}
   - {fileID: 173147430}
+  - {fileID: 1749028434}
