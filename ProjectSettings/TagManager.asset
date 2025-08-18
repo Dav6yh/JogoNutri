@@ -11,6 +11,7 @@ TagManager:
   - Esquerda
   - Tiro
   - Inimigo
+  - PassarFase
   layers:
   - Default
   - TransparentFX

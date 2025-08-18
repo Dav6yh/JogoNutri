@@ -110,7 +110,8 @@ public class Player : MonoBehaviour
         {
             rb.AddForce(Vector2.up * forcaPulo, ForceMode2D.Impulse);
             noPiso = false;
-            audioSource.TocarSom(jump);
+           // audioSource.TocarSom(jump);
+
             animator.SetBool("EstaChao", false);
             animator.SetTrigger("Pular");
         }
@@ -170,6 +171,11 @@ public class Player : MonoBehaviour
         if (collision.gameObject.CompareTag("Fatal") || collision.gameObject.CompareTag("Inimigo"))
         {
             LevarDano();
+        }
+
+        if (collision.gameObject.CompareTag("PassarFase"))
+        {
+            SceneManager.LoadScene("Fase2");
         }
     }
     private void ArrowShot()
